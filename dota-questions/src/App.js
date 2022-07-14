@@ -1,25 +1,15 @@
-import Button from '@material-ui/core/Button';
+import { NumberButton } from './components/NumberButton'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
 
-      <Button variant="contained" color="primary" disableElevation>
-      Disable elevation
-    </Button>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className='container-selection'>
+        <NumberButton value='10'/>
+        <NumberButton value='20'/>
+        <NumberButton value='30'/>
+        </div>
+
     </div>
   );
 }
