@@ -1,9 +1,11 @@
 import { NumberButton } from './components/NumberButton'
+import { Title } from './components/Title'
 
 function App() {
   return (
     <div className="App">
 
+        <Title text='Wellcome'/>
         <div className='container-selection'>
         <NumberButton value='10'/>
         <NumberButton value='20'/>
