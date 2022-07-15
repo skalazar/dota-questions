@@ -1,3 +1,4 @@
+import { CardHero } from './components/CardHero';
 import { NumberButton } from './components/NumberButton'
 import { Title } from './components/Title'
 
@@ -17,6 +18,8 @@ function App() {
           <NumberButton value='dire'/>
         </div>
 
+        <CardHero />
+        <CardHero />
     </div>
   );
 }
