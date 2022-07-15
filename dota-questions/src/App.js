@@ -12,6 +12,11 @@ function App() {
         <NumberButton value='30'/>
         </div>
 
+        <div className='container-response'>
+          <NumberButton value='radiant'/>
+          <NumberButton value='dire'/>
+        </div>
+
     </div>
   );
 }
