@@ -1,6 +1,7 @@
 import { CardHero } from './components/CardHero';
 import { NumberButton } from './components/NumberButton'
 import { Title } from './components/Title'
+import { Attribute } from './components/Attribute'
 
 function App() {
   return (
@@ -20,6 +21,12 @@ function App() {
 
         <CardHero />
         <CardHero />
+
+        <div className='container-response'>
+          <Attribute value='radiant'/>
+          <Attribute value='dire'/>
+        </div>
+
     </div>
   );
 }
