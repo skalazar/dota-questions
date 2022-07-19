@@ -2,30 +2,33 @@ import { CardHero } from './components/CardHero';
 import { NumberButton } from './components/NumberButton'
 import { Title } from './components/Title'
 import { Attribute } from './components/Attribute'
+import Box from '@material-ui/core/Box';
+
 
 function App() {
   return (
     <div className="App">
 
         <Title text='Wellcome'/>
-        <div className='container-selection'>
+
+        <Box className='container-selection'>
         <NumberButton value='10'/>
         <NumberButton value='20'/>
         <NumberButton value='30'/>
-        </div>
+        </Box>
 
-        <div className='container-response'>
+        <Box className='container-response'>
           <NumberButton value='radiant'/>
           <NumberButton value='dire'/>
-        </div>
+        </Box>
 
         <CardHero />
         <CardHero />
 
-        <div className='container-response'>
+        <Box className='container-response'>
           <Attribute value='radiant'/>
           <Attribute value='dire'/>
-        </div>
+        </Box>
 
     </div>
   );
