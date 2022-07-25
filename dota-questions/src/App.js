@@ -3,6 +3,7 @@ import { NumberButton } from './components/NumberButton'
 import { Title } from './components/Title'
 import { Attribute } from './components/Attribute'
 import Box from '@material-ui/core/Box';
+import { getFetch } from './services/getFetch';
 
 
 function App() {
@@ -20,7 +21,6 @@ function App() {
     <div className="App">
 
       <Title text='Wellcome' />
-
       <Box className='container-selection'>
         <NumberButton value='10' />
         <NumberButton value='20' />
