@@ -3,9 +3,16 @@ import { NumberButton } from './components/NumberButton'
 import { Title } from './components/Title'
 import { Attribute } from './components/Attribute'
 import Box from '@material-ui/core/Box';
+import { getFetch } from './services/getFetch';
 
 
 function App() {
+
+  const mostrarHeroes = async () => {
+    let heroes = await getFetch();
+    console.log(heroes)
+  }
+
   return (
     <div className="App">
 
@@ -22,6 +29,7 @@ function App() {
           <NumberButton value='dire'/>
         </Box>
 
+        <button onClick={mostrarHeroes}>Mostrar</button>
         <CardHero />
         <CardHero />
 
